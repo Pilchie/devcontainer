@@ -14,9 +14,9 @@
     },
 
     "remoteEnv": {
-     "PATH": "${containerEnv:DOTNET_ROOT}:${containerEnv:PATH}"
+     //"PATH": "${containerEnv:DOTNET_ROOT}:${containerEnv:PATH}"
     },
 
     // Use 'postCreateCommand' to run commands after the container is created.
-    //"postCreateCommand": "git submodule init; git submodule update --recursive;"
+    "postCreateCommand": "git submodule init; git submodule update --recursive;"
 }
