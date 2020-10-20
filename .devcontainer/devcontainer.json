@@ -10,7 +10,7 @@
 
     "containerEnv": {
         "DOTNET_ROOT": "/root/workspace/aspnetcore/.dotnet",
-        "DOTNET_MULTILEVEL_LOOKUP": "0",
+        "DOTNET_MULTILEVEL_LOOKUP": "0"
     },
 
     "remoteEnv": {
@@ -18,5 +18,5 @@
     },
 
     // Use 'postCreateCommand' to run commands after the container is created.
-    "postCreateCommand": "git submodule init; git submodule update --recursive;"
+    "postCreateCommand": "PostCloneSetup.ps1"
 }

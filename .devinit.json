@@ -1,0 +1,16 @@
+{
+  "$schema": "./devinit.schema-2.0.json",
+  "comments": "A sample dot-devinit file",
+  "run": [
+    {
+      "tool": "set-env",
+      "input": "DOTNET_ROOT=C:\\workspace\\devcontainer\\.dotnet",
+      "comments": "Set-env can set, display or delete individual variables and can display all variables."
+    },
+    {
+      "tool": "set-env",
+      "input": "DOTNET_MULTILEVEL_LOOKUP=0",
+      "comments": "Set-env can set, display or delete individual variables and can display all variables."
+    }
+  ]
+}
