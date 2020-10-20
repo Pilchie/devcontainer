@@ -1,0 +1,22 @@
+{
+    "name": "ASP.NET Core repo build",
+
+    "image": "mcr.microsoft.com/vscode/devcontainers/dotnetcore:3.1",
+
+    // Add the IDs of extensions you want installed when the container is created.
+    "extensions": [
+        "ms-dotnettools.csharp"
+    ],
+
+    "containerEnv": {
+        "DOTNET_ROOT": "/root/workspace/aspnetcore/.dotnet",
+        "DOTNET_MULTILEVEL_LOOKUP": "0",
+    },
+
+    "remoteEnv": {
+      "PATH": "${containerEnv:DOTNET_ROOT}:${containerEnv:PATH}"
+    },
+
+    // Use 'postCreateCommand' to run commands after the container is created.
+    "postCreateCommand": "git submodule init; git submodule update --recursive;"
+}
