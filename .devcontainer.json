@@ -18,5 +18,5 @@
     },
 
     // Use 'postCreateCommand' to run commands after the container is created.
-    "postCreateCommand": "PostCloneSetup.ps1"
+    "postCreateCommand": "./PostCloneSetup.ps1"
 }
